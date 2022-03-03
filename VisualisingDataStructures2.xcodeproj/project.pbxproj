@@ -14,6 +14,8 @@
 		6978E2CB27D0E42E004BB5FC /* VisualisingDataStructures2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6978E2CA27D0E42E004BB5FC /* VisualisingDataStructures2Tests.swift */; };
 		6978E2D527D0E42E004BB5FC /* VisualisingDataStructures2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6978E2D427D0E42E004BB5FC /* VisualisingDataStructures2UITests.swift */; };
 		6978E2D727D0E42E004BB5FC /* VisualisingDataStructures2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6978E2D627D0E42E004BB5FC /* VisualisingDataStructures2UITestsLaunchTests.swift */; };
+		6978E2E927D0E528004BB5FC /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6978E2E827D0E528004BB5FC /* Stack.swift */; };
+		6978E2EA27D0E95C004BB5FC /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6978E2E827D0E528004BB5FC /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		6978E2D027D0E42E004BB5FC /* VisualisingDataStructures2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisualisingDataStructures2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6978E2D427D0E42E004BB5FC /* VisualisingDataStructures2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructures2UITests.swift; sourceTree = "<group>"; };
 		6978E2D627D0E42E004BB5FC /* VisualisingDataStructures2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructures2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6978E2E827D0E528004BB5FC /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +97,9 @@
 		6978E2B827D0E42C004BB5FC /* VisualisingDataStructures2 */ = {
 			isa = PBXGroup;
 			children = (
+				6978E2E527D0E4EC004BB5FC /* Views */,
+				6978E2E727D0E515004BB5FC /* Model */,
 				6978E2B927D0E42C004BB5FC /* VisualisingDataStructures2App.swift */,
-				6978E2BB27D0E42C004BB5FC /* ContentView.swift */,
 				6978E2BD27D0E42E004BB5FC /* Assets.xcassets */,
 				6978E2BF27D0E42E004BB5FC /* Preview Content */,
 			);
@@ -125,6 +129,22 @@
 				6978E2D627D0E42E004BB5FC /* VisualisingDataStructures2UITestsLaunchTests.swift */,
 			);
 			path = VisualisingDataStructures2UITests;
+			sourceTree = "<group>";
+		};
+		6978E2E527D0E4EC004BB5FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6978E2BB27D0E42C004BB5FC /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6978E2E727D0E515004BB5FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6978E2E827D0E528004BB5FC /* Stack.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6978E2BC27D0E42C004BB5FC /* ContentView.swift in Sources */,
+				6978E2E927D0E528004BB5FC /* Stack.swift in Sources */,
 				6978E2BA27D0E42C004BB5FC /* VisualisingDataStructures2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6978E2EA27D0E95C004BB5FC /* Stack.swift in Sources */,
 				6978E2CB27D0E42E004BB5FC /* VisualisingDataStructures2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
