@@ -29,14 +29,21 @@ struct ContentView: View {
                 displayPeek = true
             })
            
-           // Text("\(stack.peek)")
-            
+                if displayPeek {
+                    Text("EMPTY PLACEHOLDER OF TEST RUNNING")
+               // Text("\(stack.peek)")
+                
+                    
             Button("View", action: {
                 stack.view()
                 displayView = true
             })
             
-                .padding()
+                    if displayView {
+                        Text("EMPTY PLACEHOLDER OF TEST RUNNING")
+                    }
+               // .padding()
+                    
             Button("Push", action: {
                 let randomNumber = Int.random(in: 1..<100)
                 
@@ -45,13 +52,20 @@ struct ContentView: View {
                 stack.push(pushItem: numberForStack)
                 displayPush = true
             })
-               .padding()
+                
+                if displayPush == true {
+                    Text("EMPTY PLACEHOLDER OF TEST RUNNING")
+                }
+               //.padding()
             
             Button("Pop", action: {
-                stack.pop()
+               _ = stack.pop()
                 displayPush = true
             })
-                .padding()
+                if displayPop == true {
+                    Text("EMPTY PLACEHOLDER OF TEST RUNNING")
+                }
+                //.padding()
        
       
         }
@@ -64,4 +78,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
 .previewInterfaceOrientation(.landscapeLeft)
     }
+}
 }
