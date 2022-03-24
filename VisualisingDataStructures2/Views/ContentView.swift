@@ -9,31 +9,49 @@ import SwiftUI
 
 struct ContentView: View {
    @State var stack = Stack()
+    
+    
     var body: some View {
+        
+      
+        
+        
+        
         VStack {
             
-            Text("Peek")
+            
+            Button("Peek", action: {
+                stack.peek()
+            })
                 .padding()
-           
-            VStack {
-                Text("View")
-                    .padding()
-            }
-            VStack {
-                Text("Push")
-                    .padding()
-            }
-            VStack {
-                Text("Pop")
-                    .padding()
-        }
+            
+            Button("View", action: {
+                stack.view()
+            })
+                .padding()
+            Button("Push", action: {
+                let randomNumber = Int.random(in: 1..<100)
+                
+                let numberForStack = String(randomNumber)
+                
+                stack.push(pushItem: numberForStack)
+            })
+                .padding()
+            
+            Button("Pop", action: {
+                stack.pop()
+            })
+                .padding()
+       
       
         }
+        // VStack ends here
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+.previewInterfaceOrientation(.landscapeLeft)
     }
 }

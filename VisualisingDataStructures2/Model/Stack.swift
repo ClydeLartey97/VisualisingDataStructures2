@@ -10,7 +10,7 @@ import SwiftUI
 
 class Stack {
     var stack: [String] = [""]
-    let push_item: String = ""
+    let pushItem: String = ""
 
     
     
@@ -22,25 +22,33 @@ class Stack {
         }
     }
     
+    
+    
     func view() {
         print(stack)
     }
     
-    func push(push_item: String) {
-        stack.insert(push_item, at: 0)
+    
+    
+    
+    func push(pushItem: String) {
+        stack.insert(pushItem, at: 0)
     }
+    
+    
+    
     
     func pop() -> String {
         if stack.count != 0 {
             return stack.popLast()!
             
         } else {
-            print("Cannot convert pop from an empty list")
+            print("List is empty. Cannot convert pop")
         }
         return " "
     }
     
     
     
-    
+
 }
